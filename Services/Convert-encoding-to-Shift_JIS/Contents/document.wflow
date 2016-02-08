@@ -21,75 +21,6 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>2.1.1</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict/>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Get Selected Finder Items 2.action</string>
-				<key>ActionName</key>
-				<string>Get Selected Finder Items</string>
-				<key>ActionParameters</key>
-				<dict/>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Get_Selected_Finder_Items_2</string>
-				<key>CFBundleVersion</key>
-				<string>2.1.1</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryFilesAndFolders</string>
-				</array>
-				<key>Class Name</key>
-				<string>AMGetSelectedFinderItemsAction</string>
-				<key>InputUUID</key>
-				<string>4AA2C23B-63F7-4899-84FB-E7C8BAAF73D1</string>
-				<key>Keywords</key>
-				<array/>
-				<key>OutputUUID</key>
-				<string>2375F0A3-1BF3-4EF8-ADAF-B6337F87408E</string>
-				<key>UUID</key>
-				<string>84B487DD-C02E-4671-9824-E919E28FBA37</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>arguments</key>
-				<dict/>
-			</dict>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
 						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
@@ -130,7 +61,7 @@
 					<key>COMMAND_STRING</key>
 					<string>for f in "$@"
 do
-	xattr -d com.apple.TextEncoding "$f"
+	xattr -w com.apple.TextEncoding 'Shift_JIS;2561' "$f"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -244,7 +175,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>513.500000:319.000000</string>
+				<string>513.500000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -253,15 +184,7 @@ done</string>
 		</dict>
 	</array>
 	<key>connectors</key>
-	<dict>
-		<key>9E7BAE9C-9218-4F57-8F58-A7AE2C13B8B8</key>
-		<dict>
-			<key>from</key>
-			<string>84B487DD-C02E-4671-9824-E919E28FBA37 - 84B487DD-C02E-4671-9824-E919E28FBA37</string>
-			<key>to</key>
-			<string>AD085A4F-CF16-4B65-A9C8-92B4D115ED56 - AD085A4F-CF16-4B65-A9C8-92B4D115ED56</string>
-		</dict>
-	</dict>
+	<dict/>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>serviceApplicationBundleID</key>
