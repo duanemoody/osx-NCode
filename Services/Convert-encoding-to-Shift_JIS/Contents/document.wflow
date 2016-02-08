@@ -77,8 +77,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -132,7 +130,7 @@
 					<key>COMMAND_STRING</key>
 					<string>for f in "$@"
 do
-	xattr -w com.apple.TextEncoding 'Shift_JIS;2561' "$f"
+	xattr -d com.apple.TextEncoding "$f"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -256,7 +254,7 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>DC642FAF-BD63-4325-A67B-25BF805B975F</key>
+		<key>9E7BAE9C-9218-4F57-8F58-A7AE2C13B8B8</key>
 		<dict>
 			<key>from</key>
 			<string>84B487DD-C02E-4671-9824-E919E28FBA37 - 84B487DD-C02E-4671-9824-E919E28FBA37</string>
